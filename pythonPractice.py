@@ -137,3 +137,92 @@
 # matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 # transpose = [[row[i] for row in matrix] for i in range(len(matrix[0]))]
 # print(transpose)
+
+# classes in python
+# class Employee:
+#     def __init__(self, firstName, lastName, salary):
+#         self.firstName = firstName
+#         self.lastName = lastName
+#         self.salary = salary
+
+#     def displayEmployee(self):
+#         print("Employee name: ", self.firstName, self.lastName)
+#         print("Salary: ", self.salary)
+
+# Employee1 = Employee("Hashir", "Khan", "40000")
+
+# Employee1.displayEmployee()
+
+
+# library management system in python
+# class Book:
+#     def __init__(self, bookId, bookName, authorName, price):
+#         self.bookId = bookId
+#         self.bookName = bookName
+#         self.authorName = authorName
+#         self.price = price
+
+#     def displayBook(self):
+#         print({
+#             "bookId": self.bookId,
+#             "bookName": self.bookName,
+#             "authorName": self.authorName,
+#             "price": self.price
+#         })
+
+
+# class Library:
+#     def __init__(self, bookList):
+#         self.bookList = bookList
+
+#     def displayLibrary(self):
+#         for book in self.bookList:
+#             book.displayBook()
+
+#     def addBook(self, book):
+#         if (book in self.bookList):
+#             print("Book already exist")
+#         else:
+#             self.bookList.append(book)
+#             print("Book added successfully")
+
+#     def removeBook(self, book):
+#         if (book in self.bookList):
+#             self.bookList.remove(book)
+#             print("Book removed successfully")
+#         else:
+#             print("Book not found")
+
+#     def updateBook(self, book, updatedBook):
+#         if (book in self.bookList):
+#             self.bookList.remove(book)
+#             self.bookList.append(updatedBook)
+#             print("Book updated successfully")
+#         else:
+#             print("Book not found")
+
+#     def lendBook(self, book):
+#         if (book in self.bookList):
+#             book.displayBook()
+#             self.bookList.remove(book)
+#             print("Book is lend")
+#         else:
+#             print("Book is not available")
+
+
+# book1 = Book(1, "Python", "Hashir", "200")
+# book2 = Book(2, "Java", "Hashir", "300")
+# book3 = Book(3, "C++", "Hashir", "400")
+# book4 = Book(4, "C", "Hashir", "500")
+# book5 = Book(5, "C#", "Hashir", "600")
+# book6 = Book(6, "JavaScript", "Hashir", "700")
+# book7 = Book(7, "HTML", "Hashir", "800")
+# book8 = Book(8, "CSS", "Hashir", "900")
+# book9 = Book(9, "PHP", "Hashir", "1000")
+# book10 = Book(10, "SQL", "Hashir", "1100")
+# book11 = Book(11, "Postgres", "Hashir", "1200")
+
+# library = Library(
+#     [book1, book2, book3, book4, book5, book6, book7, book8, book9, book10])
+
+# library.displayLibrary()
